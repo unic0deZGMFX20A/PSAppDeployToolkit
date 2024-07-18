@@ -26,5 +26,51 @@
     "powershell.codeFormatting.whitespaceBeforeOpenParen": true,
     "powershell.powerShellDefaultVersion": "Windows PowerShell (x64)",
     "powershell.scriptAnalysis.settingsPath": ".\\.vscode\\PSScriptAnalyzerSettings.psd1",
-    "dotnet.preferCSharpExtension": true
+    "dotnet.preferCSharpExtension": true,
+    "files.exclude": {
+        ".exe": true,
+        ".msi": true,
+        ".editorconfig": true,
+        ".gitattributes": true,
+        ".github": true,
+        "**/Deploy-Application.exe": true,
+        "**/Deploy-Application.exe.config": true,
+        "**/Thumbs.db": false,
+        "AppDeployToolkitLogo.png": true,
+        "AppDeployToolkitHelp.png": true,
+        "CHANGELOG.txt": true,
+        "COPYING.Lesser": true,
+        "docs": true,
+        "Examples": true,
+        "LICENSE": true,
+        "material": true,
+        "mkdocs.yml": true,
+        "PSAppDeployToolkit.pdf": true,
+        "README.md": true,
+        "Sources": true,
+        "Testing": true,
+        "TODO.txt": true,
+        "wiki": true
+    },
+    "terminal.integrated.profiles.windows": {
+        "PowerShell Devops": {
+            "path": "C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\powershell.exe",
+            "source": "PowerShell",
+            "args": [
+                //"-NoLogo",
+                //"-NoExit",
+                //"-ExecutionPolicy",
+                //"RemoteSigned",
+                "Import-Module oh-my-posh;Set-Theme qwerty"
+            ]
+        },
+        "Git Bash": null,
+        "Command Prompt": null,
+        "JavaScript Debug Terminal": null,
+        "Azure Cloud Shell (Bash)": null
+    },
+    "terminal.integrated.defaultProfile.windows": "PowerShell Devops",
+    "files.defaultLanguage": "powershell",
+    "terminal.integrated.enablePersistentSessions": false,
+    "terminal.integrated.persistentSessionReviveProcess": "never"
 }
